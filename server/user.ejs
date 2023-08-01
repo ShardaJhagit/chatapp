@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Created account list</title>
+</head>
+<body>
+    <h1>User account list</h1>
+    <table border="1" width="100%">
+        <tr>
+            
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Actions</th>
+        </tr>
+        <% if(created_account.length>0){%>
+            <% for (var i=0;i<created_account.length ; i++){%>
+                <tr>
+                    
+                    <td><%- created_account[i].name %></td>
+                    <td><%- created_account[i].email %></td>
+                    <td><%- created_account[i].password %></td>
+                    <td><a href="/delete?email=<%- created_account[i].email %>">Delete</a></td>
+                </tr>
+
+                <% } %>
+        <%}else{%>
+            <tr>
+                <td colspan="3">DATA NOT FOUND</td>
+            </tr>
+        <% } %>
+    </table>    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search file</title>
+</head>
+<body>
+    <h1>Search Here</h1>
+    <form action="/search">
+        <input type="search" name="name" placeholder="Search Name">
+        <input type="search" name="email" placeholder="Search email">
+        <input type="submit" value="search">
+    <h1>User account list</h1>
+    <table border="1" width="100%">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            
+        </tr>
+        <% if(created_account.length>0){%>
+            <% for (var i=0;i<created_account.length ; i++){%>
+                <tr>
+                    <td><%- created_account[i].name %></td>
+                    <td><%- created_account[i].email %></td>
+                    <td><%- created_account[i].password %></td>
+                    
+
+                <% } %>
+        <%}else{%>
+        <tr>
+            <td colspan="3">DATA NOT FOUND</td>
+        </tr>
+        <% } %>
+    
+</body>
+</html>

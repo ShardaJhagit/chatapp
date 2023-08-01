@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#body{
+    background: linear-gradient(#e66465, #9198e5);
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+#change{
+    background-color: rgb(104, 30, 30);
+    width:auto;
+    height: 8rem;
+    
+}
+#logo{
+    height:7rem;
+    margin-top: 0.5rem;
+    margin-left: 45vw;
+
+}
+#box{
+    
+    margin: auto;
+    width: 70%;
+    border: 3px solid black;
+    height: 65vh;
+    margin-top: 2rem;
+    padding: 10px;
+    overflow-y: auto;
+    
+}
+#box h5{
+    text-align: center;
+}
+#msg{
+    width: 45%;
+    margin-left: 23rem;
+    margin-top: 0.1rem;
+    padding: 0.5rem;
+}
+.send{
+    padding: 0.5rem;
+    border-radius: 10%;
+    background-color: #9198e5;
+    color: black;
+    margin-left: 0.5rem;
+    border: 2px black solid;
+}
+
+#number{
+    background-color: black;
+    color: #e66465;
+    text-align: center;
+    font-size: xx-large;
+    display: flex
+}
+#leave{
+    background-color: orangered;
+    padding: 4px;
+    margin-left:20rem;
+    margin-top: 3rem;
+    border: 2px black solid;
+    border-radius: 10%;
+}
+#leave:hover{
+    background-color: rgb(243, 189, 170);
+
+}
