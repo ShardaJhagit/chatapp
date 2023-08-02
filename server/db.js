@@ -38,7 +38,7 @@ app.post("/logged",(req,res)=>{
 
         }
         else if(data.length>0){
-            res.send(data)
+            res.send(data[0].name)
             
         }
         else{

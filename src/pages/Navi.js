@@ -22,7 +22,7 @@ function Navi(){
           <Link to="/about" className="list m-5 hover:bg-slate-700 hover:rounded full">
             About
           </Link>
-          <Link to="/username" className="list m-5 hover:bg-slate-700 hover:rounded full " >
+          <Link to="/chat" className="list m-5 hover:bg-slate-700 hover:rounded full " >
             Chat
           </Link>
           
