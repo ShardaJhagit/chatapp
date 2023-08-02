@@ -2,7 +2,7 @@ import images from "./images.png";
 import "./Chat.css";
 import socketIO from "socket.io-client";
 import Msg from "./Msg.js";
-import { user } from "./Login.js";
+import { user } from "./Log.js";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
