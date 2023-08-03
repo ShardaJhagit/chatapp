@@ -43,13 +43,16 @@
     margin-top: 0.1rem;
     padding: 0.5rem;
 }
-.send{
+#send{
     padding: 0.5rem;
     border-radius: 10%;
     background-color: #9198e5;
     color: black;
     margin-left: 0.5rem;
-    border: 2px black solid;
+    border: 1px black solid;
+}
+#send:hover{
+    background-color: blueviolet;
 }
 
 #number{
@@ -57,7 +60,7 @@
     color: #e66465;
     text-align: center;
     font-size: xx-large;
-    display: flex
+    
 }
 #leave{
     background-color: orangered;
@@ -70,4 +73,11 @@
 #leave:hover{
     background-color: rgb(243, 189, 170);
 
+}
+#date{
+    background-color: #e66465;
+    padding: 0.2rem;
+    text-align: center;
+    margin-left: 25rem;
+    margin-right: 20rem;
 }

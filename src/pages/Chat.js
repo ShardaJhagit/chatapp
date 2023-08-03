@@ -2,7 +2,7 @@ import images from "./images.png";
 import "./Chat.css";
 import socketIO from "socket.io-client";
 import Msg from "./Msg.js";
-import { user } from "./Log.js";
+//import { user } from "./Login.js";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -10,6 +10,7 @@ let socket;
 const ENDPOINT = "http://localhost:8070/";
 
 function Chat() {
+  const user=localStorage.getItem("user")
   let [msgs, setmsg] = useState([]);
   // const [id,setid]=useState()
   let userid = [];
@@ -25,7 +26,7 @@ function Chat() {
   }
   const navigate=useNavigate()
   function leave(){
-    localStorage.removeItem("userName")
+    localStorage.removeItem("id")
     navigate("/", {replace: true})
     window.location.reload();
   }
@@ -43,8 +44,7 @@ function Chat() {
       //new user joined
       socket.emit("joined", user);
     },
-    user,
-    [msgs]
+    user
   );
   useEffect(()=>{
     socket.on("no.",function(data){
@@ -80,6 +80,21 @@ function Chat() {
     });
   }, [msgs]);
 
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+  function date(d){
+    
+    const day= d.getDate()
+    const month =monthNames[d.getMonth()]
+    const year = d.getFullYear()
+    return(
+      day+" "+month+" "+year
+    )
+
+  }
+
   return (
     <div id="body">
       <div id="change">
@@ -92,7 +107,7 @@ function Chat() {
            
         </div>
       <div id="box">
-        
+        <div id="date">{date(new Date())}</div>
         {msgs.map((item, i) => (
           <Msg
             user={localStorage.getItem("id") === item.id ? "" : item.user}

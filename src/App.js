@@ -11,6 +11,7 @@ import Register from './pages/Register';
 //import Enroll from './pages/Enroll';
 import Chat from './pages/Chat';
 import Log from './pages/Log';
+import ChatPrivacy from './pages/ChatPrivacy';
 
 
 
@@ -24,20 +25,26 @@ function App() {
       
       <Routes>
         <Route element={<Private/>}>
+        
+          
+          
         <Route path="/" element={ <Home/> } />
         <Route path="/about" element={ <About/> } />
+        <Route path="/contact" element={ <Contact/> } />
         
         <Route path="/chat" element={ <Chat/> } />
         <Route path="/username" element={ <Log/> } />
-        
         </Route>
         
         
         
-        <Route path="/contact" element={ <Contact/> } />
+        
+        
         <Route path="/register" element={<Register/>} />
         <Route path="/login" element={ <Login/> } />
       </Routes>
+      
+
       
       
     </div>

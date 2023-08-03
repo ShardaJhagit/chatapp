@@ -2,13 +2,13 @@ import { useEffect, useState } from "react"
 import { json } from "react-router-dom"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
-let user;
+
 function Login(){
     const [name,setName]=useState("")
     const [email,setEmail]=useState("")
     const [password,setpwd]=useState("")
-    user=localStorage.getItem("user")
     
+     
 
      function Log(){
        
@@ -19,7 +19,6 @@ function Login(){
                 
             }
             else{
-                
                 alert("you logged in successfully, "+res.data)
                 localStorage.setItem("user",res.data)
                 
@@ -34,12 +33,10 @@ function Login(){
         const auth=localStorage.getItem("user");
         if(auth){
             navigate("/", {replace: true})
-            console.log(user)
         }
     })
     function Reg(){
         navigate("/Register",{replace:true})
-
     }
     
     return(
@@ -67,4 +64,3 @@ function Login(){
     )
 }
 export default Login
-export {user}
