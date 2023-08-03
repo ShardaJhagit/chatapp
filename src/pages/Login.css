@@ -1,0 +1,28 @@
+@media only screen and (max-width:800px){
+    #loginbox{
+        width: 60vw;
+    }
+    #logemail{
+        width: 45vw;
+    }
+    #logpwd{
+        width: 45vw;
+    }
+    #name{
+        width: 45vw;
+
+    }
+    #email{
+        width: 45vw;
+
+    }
+    #pwd{
+        width: 45vw;
+
+    }
+    #btn{
+        margin-left: 2.5rem;
+    }
+    
+
+}

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { json } from "react-router-dom"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
+import './Login.css'
 
 function Login(){
     const [name,setName]=useState("")
@@ -41,12 +42,12 @@ function Login(){
     
     return(
         <div className="">
-            <div className=" h-96 w-1/4 p-5  shadow-2xl shadow-slate-600 hover:border-zinc-950 hover: border-solid hover:border-2 rounded-xl m-24 mx-auto">
+            <div className=" h-96 w-1/4 p-5  shadow-2xl shadow-slate-600 hover:border-zinc-950 hover: border-solid hover:border-2 rounded-xl m-24 mx-auto " id="loginbox">
             <h3 className="text-xl bg-slate-400 rounded p-1 text-center"><b>Log Into Your Account</b></h3>
                 <form className="mt-5" autoComplete="on">
                 <label >Enter E-mail:
                 <br></br>
-                <input type="text" placeholder="Enter E-mail here" className="border-zinc-950 border-2 rounded-xl w-80 mb-4 p-1" id="logemail" onChange={(e)=>setEmail(e.target.value)}></input><br></br>
+                <input type="text" placeholder="Enter E-mail here" className="border-zinc-950 border-2 rounded-xl w-80 mb-4 p-1 " id="logemail" onChange={(e)=>setEmail(e.target.value)}></input><br></br>
                 </label>
                 <label>Password:</label><br></br>
                 <input type="password" autoComplete="on" placeholder="Enter password" className="border-zinc-950 border-2 rounded-xl w-80 p-1" id="logpwd" onChange={(e)=>setpwd(e.target.value)}></input><br></br>
