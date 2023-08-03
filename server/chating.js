@@ -4,7 +4,7 @@ const server=require("http").createServer(app)
 const io=require("socket.io")(server)
 let users=[]
 let count=0;
-const port = 8070|| process.env.PORT;
+const port = 8070;
 // user connect
 io.on("connect",function(socket){
     console.log(socket)
