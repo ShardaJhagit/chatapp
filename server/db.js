@@ -4,6 +4,7 @@ const mysql= require("mysql")
 const cors=require("cors")
 const bodyparser=require("body-parser")
 const nodemailer=require("nodemailer")
+const port = 8080|| process.env.PORT;
 
 const db=mysql.createPool({
     host:'localhost',
@@ -145,4 +146,4 @@ app.get("/course",(req,res)=>{
 
 
 
-app.listen(8080)
+app.listen(port)

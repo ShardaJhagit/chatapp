@@ -4,6 +4,7 @@ const server=require("http").createServer(app)
 const io=require("socket.io")(server)
 let users=[]
 let count=0;
+const port = 8070|| process.env.PORT;
 // user connect
 io.on("connect",function(socket){
     console.log(socket)
@@ -38,7 +39,7 @@ socket.on("disconnect",function(){
 })
 
 
-server.listen(8070,()=>{
+server.listen(port,()=>{
     console.log("server start")
 })
 
