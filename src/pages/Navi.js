@@ -25,9 +25,7 @@ function Navi(){
           <Link to="/about" className="list m-5 hover:bg-slate-700 hover:rounded full" id="about" class="hide">
             About
           </Link>
-          <Link to="/chat" className="list m-5 hover:bg-slate-700 hover:rounded full " onClick={()=>setnavbar(false)}  id="chat" class="hide">
-            Chat
-          </Link>
+          
           
           
           <Link to="/contact" className="list m-5 hover:bg-slate-700 hover:rounded full "  class="hide">
