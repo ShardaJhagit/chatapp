@@ -35,7 +35,9 @@ function Navi(){
           </Link>
           
           {auth?<>
-            
+            <Link to="/chat" className="list m-5 hover:bg-slate-700 hover:rounded full " onClick={()=>setnavbar(false)}  id="chat" class="hide">
+            Chat
+          </Link>
           
           <Link to="/login" className="list m-5 hover:bg-slate-700 hover:rounded full " onClick={logout}  id="chat" >
             Logout
