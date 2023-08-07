@@ -146,4 +146,6 @@ app.get("/course",(req,res)=>{
 
 
 
-app.listen(port)
+app.listen(port,()=>{
+    console.log("server start")
+})
