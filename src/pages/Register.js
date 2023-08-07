@@ -18,7 +18,7 @@ function Register(){
         }
         else{
             alert("created account successfully")
-            let data =await fetch("http://localhost:8080/login",{method:"post",body:JSON.stringify({name,email,password}),headers:{
+            let data =await fetch("http://65.2.129.131:8080/login",{method:"post",body:JSON.stringify({name,email,password}),headers:{
             "Content-Type":"application/json"
           }})   
     
