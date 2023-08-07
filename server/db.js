@@ -7,7 +7,7 @@ const nodemailer=require("nodemailer")
 const port = 8080;
 
 const db=mysql.createPool({
-    host:'127.0.0.1',
+    host:'localhost',
     user:'root',
     password:'Sjsql@1234',
     database:'sj'
