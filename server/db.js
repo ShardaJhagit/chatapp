@@ -133,16 +133,6 @@ app.get("/mail", (req,res)=>{
     
 })
 
-app.get("/course",(req,res)=>{
-    db.query("Select * from courses",(err,result)=>{
-        if(err){
-            res.send ("err")
-        }
-        else{
-            res.render("courselist",{courses:result})
-        }
-    })
-})
 
 
 
