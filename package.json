@@ -1,5 +1,7 @@
 {
   "name": "project",
+  "proxy": "http://www.sjchatapp.jhablog.co.in",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
