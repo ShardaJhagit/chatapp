@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     accentColor: ({ theme }) => ({
       ...theme('colors'),
-      auto: 'auto',
+      auto: 'auto', 
     }),
     animation: {
       none: 'none',
