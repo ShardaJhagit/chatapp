@@ -5,7 +5,7 @@ module.exports = {
   darkMode: 'media', // or 'class'
   theme: {
     accentColor: ({ theme }) => ({
-      ...theme('colors'),
+      ...theme('colors'), 
       auto: 'auto', 
     }),
     animation: {
