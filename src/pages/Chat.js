@@ -106,7 +106,9 @@ function Chat() {
       <div id="number">
            
         </div>
-      <div id="box">
+      <div id="content">
+        
+        <div id="box">
         <div id="date">{date(new Date())}</div>
         {msgs.map((item, i) => (
           <Msg
@@ -116,6 +118,8 @@ function Chat() {
           />
         ))}
       </div>
+      </div>
+      
       <div>
         <form>
           <input type="text" id="msg" placeholder="Enter Text"></input>

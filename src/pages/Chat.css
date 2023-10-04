@@ -133,3 +133,16 @@
         margin-left: 15rem ;
     }
 }
+#content{
+    display: flex;
+}
+#list{
+    
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 5px;
+    border: 2px solid #e66465;
+    height: 70vh;
+    width: 20vw;
+
+}
